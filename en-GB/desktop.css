@@ -47,4 +47,35 @@ body{
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+.body-container{
+	font-family: 'Inter';
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.6);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+body{
+		margin: 0;
+}
+.sidedrop{
+	width: 20%;
+	height: 100vh;
+	display: inline-block;
+}
+.sidedrop div{
+	color: white;
+	margin-top: 30%;
+}
+.sidedrop div p:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+.iframecontainer{
+	background-color: rgba(0,0,0,1);
+}	
 }
