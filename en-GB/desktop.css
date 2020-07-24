@@ -11,16 +11,40 @@ body{
 		margin: 0;
 }
 .sidedrop{
-	width: 20vw;
+	width: 20%;
 	height: 100vh;
+	display: inline-block;
 }
 .sidedrop div{
 	color: white;
 	margin-top: 30%;
 }
 .sidedrop div p{
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	padding-left: 20px;
 	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.sidedrop div p:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+.iframecontainer{
+	background-color: rgba(255,255,255,1);
+	display: inline-block;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	width: 79%;
+	border-radius: 10px;
+}
+.iframecontainer iframe{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
