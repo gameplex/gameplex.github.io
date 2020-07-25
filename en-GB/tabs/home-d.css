@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+}
+p,h1,h2,h3,h4,h5,h6{
+	font-family: 'Inter';
+	padding: 0;
+	margin: 0;
+}
+.v-list-out{
+	padding-left: 30px;
+	padding-top: 30px;
+}
+.default-v-list-item-out{
+	margin-right: 20px;
+	margin-top: 20px;
+	background-color: rgba(255,81,69,1);
+	width: 300px;
+	height: 200px;
+	border-radius: 15px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+-webkit-box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);
+transform: scale(1);
+transition: transform 0.2s cubic-bezier(0,0,.06,.97);
+}
+.default-v-list-item-out:hover{
+transform: scale(1.1);
+	transition: transform 0.2s cubic-bezier(0,0,.06,.97);
+}
+.default-v-list-item-out:active{
+
+}
+.default-v-list-item-out div{
+vertical-align: sub;
+background-color: rgba(255,255,255,0.7);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+.default-v-list-item-out div p{
+padding: 10px;
+}
+.a{
+	color: black;
+	text-decoration: none;
+}

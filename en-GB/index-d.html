@@ -1,23 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<title>Home - Gameplex UK</title>
+<title>Gameplex UK</title>
 <link rel="stylesheet" href="desktop.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="background-image: url(../images/desktop-back-640.jpg);">
 <div id="sidebar" class="sidebar">
 <div id="inner-sidebar" class="inner-sidebar">
-<div id="home-btn" class="sidebar-active"><img src="../images/home.svg"><p>Home</p></div>
-<div id="about-btn" class=""><img src="../images/about.svg"><p>About</p></div>
+<div id="home-btn" onclick="tab_activate('home-btn')" class="sidebar-active"><img src="../images/home.svg"><p>Home</p></div>
+<div id="about-btn" onclick="tab_activate('about-btn')" class=""><img src="../images/about.svg"><p>About</p></div>
 </div>
 </div><div id="content" class="content">
-<iframe src="https://wikipedia.com" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+<iframe id="frame" src="tabs/home-d.html" frameborder="0" style="height: 100%; width: 100%;"></iframe>
 </div>
 <script type="text/javascript">
+var current_tab = document.getElementById('home-btn');
 var content = document.getElementById("content");
 content.setAttribute("style", "width: " + (window.innerWidth - 300) + "px;");
 setTimeout(windowResized, 10);
+var frame = document.getElementById("frame");
+
+function tab_activate(string){
+if (string == 'home-btn'){
+current_tab.setAttribute("class", "");
+current_tab = document.getElementById('home-btn');
+frame.src = "/en-GB/tabs/home-d.html";
+current_tab.setAttribute("class", "sidebar-active");
+}
+if (string == 'about-btn'){
+current_tab.setAttribute("class", "");
+current_tab = document.getElementById('about-btn');
+frame.src = "https://wikipedia.org";
+current_tab.setAttribute("class", "sidebar-active");
+}
+}
+
 
 function windowResized(){
 if (window.innerWidth >= 600){
@@ -37,8 +55,6 @@ var inn = document.getElementById
 inn.setAttribute("class", "inner-sidebar-small");
 content.setAttribute("style", "width: " + (window.innerWidth - 50) + "px;");
 }
-
-
 setTimeout(windowResized, 10);
 }
 </script>
