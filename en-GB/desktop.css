@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+p,h1,h2,h3,h4,h5,h6{
+	font-family: 'Inter';
+	padding: 0;
+	margin: 0;
+}
+.sidebar{
+	margin:0;
+	padding:0;
+	width: 300px;
+	height: 100vh;
+	background-color: rgba(255,255,255,0.6);
+	backdrop-filter: blur(15px);
+	display: inline-block;
+	vertical-align:top;
+	}
+	.inner-sidebar{
+		margin-top: 20vh;
+	}
+		.inner-sidebar div{
+			width: 100%;
+			padding-top: 15px;
+		padding-bottom: 15px;
+		transition: background-color 0.2s linear;
+	}
+			.inner-sidebar div:hover{
+background-color: rgba(0,0,0,0.2);
+	transition: background-color 0s linear;
+
+	}
+			.sidebar-active{
+			width: 100%;
+		margin-right: -10px;
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+				.sidebar-active img{
+filter: invert();
+	}
+			.inner-sidebar div p{
+display: inline-block;
+font-size: 25px;
+vertical-align: middle;
+	}
+				.inner-sidebar div img{
+					padding-left: 20px;
+display: inline-block;
+height: 25px;
+vertical-align: middle;
+margin-right: 10px;
+	}
+.content{
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255,255,255,1);
+	display: inline-block;
+	vertical-align:top;
+	height: 100vh;
+}
+.sidebar-small{
+	margin:0;
+	padding:0;
+	width: 50px;
+	height: 100vh;
+	background-color: rgba(255,255,255,0.6);
+	backdrop-filter: blur(15px);
+	display: inline-block;
+	vertical-align:top;
+	}
+	.inner-sidebar-small {
+		margin-top: 20vh;
+	}
+		.inner-sidebar-small div{
+			width: 100%;
+			padding-top: 15px;
+		padding-bottom: 15px;
+		transition: background-color 0.2s linear;
+	}
+		.inner-sidebar-small div:hover{
+background-color: rgba(0,0,0,0.2);
+	transition: background-color 0s linear;
+	}
+		.inner-sidebar-small div p{
+display: none;
+font-size: 25px;
+vertical-align: middle;
+	}
+				.inner-sidebar-small div img{
+					padding-left: 13px;
+display: inline-block;
+height: 25px;
+vertical-align: middle;
+margin-right: 10px;
+	}

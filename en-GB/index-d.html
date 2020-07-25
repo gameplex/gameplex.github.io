@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>Home - Gameplex UK</title>
+<link rel="stylesheet" href="desktop.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-image: url(../images/desktop-back-640.jpg);">
+<div id="sidebar" class="sidebar">
+<div id="inner-sidebar" class="inner-sidebar">
+<div id="home-btn" class="sidebar-active"><img src="../images/home.svg"><p>Home</p></div>
+<div id="about-btn" class=""><img src="../images/about.svg"><p>About</p></div>
+</div>
+</div><div id="content" class="content">
+<iframe src="https://wikipedia.com" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+</div>
+<script type="text/javascript">
+var content = document.getElementById("content");
+content.setAttribute("style", "width: " + (window.innerWidth - 300) + "px;");
+setTimeout(windowResized, 10);
+
+function windowResized(){
+if (window.innerWidth >= 600){
+var content = document.getElementById("content");
+var sidebar = document.getElementById("sidebar");
+sidebar.setAttribute("class", "sidebar")
+content.setAttribute("style", "width: " + (window.innerWidth - 300) + "px;");
+var inn = document.getElementById
+("inner-sidebar");
+inn.setAttribute("class", "inner-sidebar");
+} else{
+var content = document.getElementById("content");
+var sidebar = document.getElementById("sidebar");
+sidebar.setAttribute("class", "sidebar-small");
+var inn = document.getElementById
+("inner-sidebar");
+inn.setAttribute("class", "inner-sidebar-small");
+content.setAttribute("style", "width: " + (window.innerWidth - 50) + "px;");
+}
+
+
+setTimeout(windowResized, 10);
+}
+</script>
+</body>
+</html>
