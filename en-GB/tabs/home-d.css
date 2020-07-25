@@ -51,3 +51,31 @@ padding: 10px;
 	color: black;
 	text-decoration: none;
 }
+@media (prefers-color-scheme: dark){
+	body{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+}
+p,h1,h2,h3,h4,h5,h6{
+	font-family: 'Inter';
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+.default-v-list-item-out{
+	background-color: rgba(255,81,69,1);
+-webkit-box-shadow: 0px 5px 11px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 5px 11px 0px rgba(255,255,255,0.75);
+box-shadow: 0px 5px 11px 0px rgba(255,255,255,0.75);
+}
+.default-v-list-item-out div{
+background-color: rgba(0,0,0,0.7);
+}
+.default-v-list-item-out div p{
+padding: 10px;
+}
+.a{
+	color: white;
+}
+}

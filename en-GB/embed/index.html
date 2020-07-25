@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="player.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div style="text-align: center; top: 50%; left: 50%; position: fixed; transform: translate(-50%, -50%); border-radius: 10px;" id="containerplayer"></div>
+<script>
+var id = new URL(window.location).searchParams.get('id');
+var id = decodeURI(id);
+var width = new URL(window.location).searchParams.get('width');
+var height = new URL(window.location).searchParams.get('height');
+var player = "<iframe frameborder='0' style='width: " + width + "px; height: " + height + "px; border-radius: 10px; -webkit-box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75); box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.75);' id='game' src='";
+document.getElementById("containerplayer").innerHTML = player + (id) + "'></iframe>";
+var title = new URL(window.location).searchParams.get('title');
+document.getElementById("title").innerHTML = title;
+</script>
+</body>
+</html>
